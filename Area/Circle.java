@@ -1,14 +1,13 @@
-import java.util.Scanner;
 public class Circle{
   
-  public float getArea(){
-    Scanner sc= new Scanner(System.in);
-
-    System.out.println("Enter radius of circle");
-    float r=sc.nextInt();
-    
+  public float getArea(float r){
     float area= (float)3.14*r*r;
     return area;
+  }
+
+  public float getPerimeter(float r){
+    float perimeter= (float)3.14*2* r;
+    return perimeter;
   }
 
 }
